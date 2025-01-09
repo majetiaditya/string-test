@@ -30,6 +30,10 @@ describe("Sum Function", () => {
     expect(sum("-1,5")).to.equal('negative numbers not allowed -1');
   });
 
+  it("should return an error message when string contains negative number with new line", () => {
+    expect(sum("-1,5\n7")).to.equal('negative numbers not allowed -1');
+  });
+
   it("should return an error message when string contains negative numbers", () => {
     expect(sum("-1,5,-7")).to.equal('negative numbers not allowed -1, -7');
   }); 

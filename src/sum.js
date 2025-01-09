@@ -32,7 +32,7 @@ const res2 = sum("1");
 const res3 = sum("1,5");
 const res4 = sum("1\n2,3");
 const res5 = sum("//;\n1;2");
-const res6 = sum("-1,5");
+const res6 = sum("-1,5\n7");
 const res7 = sum("-1,5,-7");
 
 console.log("res1 :", res1);
